@@ -1,4 +1,4 @@
-#MyApp
+#Gitta
 
 
 Intro till git
