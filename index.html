@@ -5,6 +5,7 @@
 <!-- Fontawesome script -->
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous">
 </script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="jscript/java.js"></script>
@@ -19,22 +20,51 @@
 	<nav class="main-nav">
 		<ul>
 			<li class="headerlogo">
-				<a href="#"> Sowiso hjälpmedel </a>
+				<a href="index.html"> Sowiso hjälpmedel </a>
 			</li>
-			<li class="headerstart">
-				<a href="#"> Tips & Tricks </a>
+			<li id="headerstart">
+				<a href="tips.html"> 
+				<i class="far fa-lightbulb"></i>
+				Tips & Tricks </a>
+				<ul class="dropdown">
+					<li> <a href="#">Nästa uppgift</a> </li>
+					<li> <a href="#">Håll koll</a> </li>
+					<li> <a href="#">Tabeller</a> </li>
+				</ul>
 			</li>
 			<li>
-				<a href="#"> Uppgiftstyper </a>
+				<a href="pinboard.html"> 
+				<i class="far fa-clipboard"></i>
+				Anslagstavla </a>
+				<ul class="dropdown">
+					<li><a href="#">Open (free)</a></li>
+					<li><a href="#">Grafer</a></li>
+					<li><a href="#">Samtliga</a></li>
+				</ul>
 			</li>
 			<li>
-				<a href="#"> Feedback </a>
+				<a href="glossary.html"> 
+				<i class="far fa-file-alt"></i>
+				Ordlista </a>
+				<ul class="dropdown">
+					<li><a href="#">Feedback</a></li>
+					<li><a href="#">Chapters</a></li>
+					<li><a href="#">Samtliga</a></li>
+				</ul>
+
 			</li>
 			<li>
-				<a href="#"> Manual </a>
+				<a href="manual.html">
+				<i class="far fa-life-ring"></i>
+				Manual </a>
+				<ul class="dropdown">
+					<li><a href="#">Solutions</a></li>
+					<li><a href="#">Types</a></li>
+					<li><a href="#">Feedback</a></li>
+				</ul>
 			</li>
 			<li class="socialstart">
-				<a href="#"><i style="font-size: 1rem;" class="fab fa-facebook-square"></i></a>
+				<a href="https://www.facebook.com/Tysktillan" target="_blank"><i style="font-size: 1rem;" class="fab fa-facebook-square"></i></a>
 			</li>
 			<li>
 				<a class="nvmlink" target="_blank" href="https://www.nevermindmedia.se/"><img src="images/favicon.ico"></a>
@@ -58,8 +88,8 @@
 	<ul class="discoverlist">
 
 		<li>
-			<h5>Uppgiftstyper</h5>
-			<p>Läs på om hur du kan tänka angående vilken uppgiftstyp som går till vilken uppgift.</p>
+			<h5>Från start till slut</h5>
+			<p>Se exempel på hur du kan lösa olika uppgifter från start till slut med alla tillhörande steg.</p>
 			<form class="möjlighetlänk" action="file:///C:/Users/jtil1/Documents/Sidor/Liber/index.html#">
 			<input type="submit" value="Läs mer"> </form>
 		</li>
@@ -70,17 +100,24 @@
 			<input type="submit" value="Läs mer"> </form>
 		</li>
 		<li>
-			<p>Skapa en minnesvärd kundresa och nå ut genom sociala kanaler med löpande optimering.</p>
+			<h5>LaTeX kod</h5>
+			<p>Se över vilka möjligheter och kommandon som finns att använda via Sowiso's macros.</p>
+			<form class="möjlighetlänk" action="file:///C:/Users/jtil1/Documents/Sidor/Liber/index.html#">
+			<input type="submit" value="Läs mer"> </form>
 		</li>
 		<li>
-			<p>Skapa relationer baserat på förtroende med ett säkert, relevant och värdefullt informationsflöde.</p> 
+			<h5>Uppdatera</h5>
+			<p>Hjälp oss att hålla styrdokumentet uppdaterad, maila in synpunkter och frågor som dyker upp.</p> 
+				<a class="mailaoss" href="mailto:jesper@nevermindmedia.se?Subject=Feedback%20styrdokument" target="_top"><i class="fas fa-envelope"></i></a>
+		</li>
+			<li class="nmmimg">
+				<h5>Besök nevermind media</h5>
+				<a href="https://www.nevermindmedia.se/" target="_blank">
+			<img src="images/155661039674492585.png"></a>
 		</li>
 	</ul>
 </div>
 
-<div id="youtubeclip" class="videosample">
-<iframe width="500" height="275" src="https://www.youtube.com/embed/0PbjZ01ObLA" frameborder="0"></iframe>
-</div>
 
 </section>
 

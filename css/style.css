@@ -70,6 +70,12 @@ header {
 	list-style: none;
 }
 
+.main-nav ul li {
+
+	position: relative;
+	transition-duration: .5s;
+}
+
 .main-nav ul a {
 	text-decoration: none;
 	position: relative;
@@ -107,10 +113,48 @@ header {
 .headerlogo {
 	transform: scale(1.3);
 	justify-self: center;
+
 }
 
-.headerstart {
+#headerstart {
 	grid-column-start: 5;
+}
+
+.main-nav ul li {
+	display: block;
+	text-align: center;
+	transition-duration: .5s;
+}
+
+ul li:hover > ul, ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	transition-duration: .3s;
+	display: block;
+
+}
+
+.dropdown {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	display: none;
+	color: var(--golden);
+	padding: 1rem 0 0 0;
+	width: 60%;
+	margin-right: 40%;
+	margin-left: 18%;
+}
+
+.dropdown li {
+	clear: both;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	margin: 1.5px 0 0 0;
+	border-radius: 5px;
+	background: rgba(5,5,5,.5);
+	text-align: center;
+	
 }
 
 .socialstart {
@@ -130,7 +174,7 @@ header {
 	grid-template-rows: 1fr 1fr;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-top: 3rem;
+	margin-top: 2.3rem;
 }
 
 .showcasetexttop {
@@ -206,7 +250,7 @@ header {
 .discoverlist {
 	display: grid;
 	grid-area: discoverlist;
-	grid-template-columns: repeat(4, minmax(150px, 200px));
+	grid-template-columns: repeat(5, minmax(150px, 200px));
 	font-family: Cabin;
 	font-size: 1.1em;
 	color: #585857;
@@ -221,11 +265,13 @@ header {
 	background: #F7F7F8;
 }
 
-.möjlighetlänk input {
+.discoverlist input, .mailaoss {
 	box-shadow: 0 0 20px #eee;
 	border: none;
 	padding: 10px 25px 10px 25px;
 	margin-bottom: auto;
+	color: rgba(5,5,5,.45);
+	font-weight: 600;
 	transition: .5s;
 	background-size: 200% auto;
 	letter-spacing: .45px;
@@ -233,37 +279,42 @@ header {
 	background-image: linear-gradient(to right, #007735 0%, #31d67b 71%, #007735 120%);
 }
 
-.möjlighetlänk input:hover {
+.discoverlist input:hover, .discoverlist a:hover {
 	cursor: pointer;
 	background-position: right center;
+	color: rgba(5,5,5,.6);
 }
 
-.videosample {
-	grid-area: videosample;
-	margin-left: 3rem;
-	margin-right: 1.2rem;
-	margin-top: 17px;
+.nmmimg {
+	background: #fff !important;
+	align-self: center;
 }
 
+.nmmimg img {
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+	filter: grayscale(55%);
+	-webkit-transition: filter .5s;
+}
 
+.nmmimg img:hover {
+	-webkit-transition: filter .5s;
+	filter: grayscale(0%);
+}
 
 /* Triangel-avskiljare */
-.ss-style-triangles::before,
-.ss-style-triangles::after {
+.ss-style-triangles::before {
 	left: 50%;
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	-webkit-transform: translateX(-50%) rotate(45deg);
 	transform: translateX(-50%) rotate(45deg);
 }
 
 .ss-style-triangles::before {
-	top: -93px;
+	top: -85px;
 	background: #fff;
-}
-
-.ss-style-triangles::after {
-	display: none;
 }
 
 section.color h2 {
