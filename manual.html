@@ -7,10 +7,15 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous">
 	</script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Styling main css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Styling tips -->
+	<link rel="stylesheet" href="css/substyle.css">
 	<title></title>
 </head>
 <body>
+<div class="wrapper">
 	<nav class="main-nav">
 		<ul>
 			<li class="headerlogo">
@@ -28,12 +33,12 @@
 			</li>
 			<li>
 				<a href="pinboard.html"> 
-				<i class="far fa-clipboard"></i>
-				Anslagstavla </a>
+				<i class="far fa-newspaper"></i>
+				nmm blogg </a>
 				<ul class="dropdown">
-					<li><a href="#">Open (free)</a></li>
-					<li><a href="#">Grafer</a></li>
-					<li><a href="#">Samtliga</a></li>
+					<li><a href="#">Liber</a></li>
+					<li><a href="#">Sommarfest</a></li>
+					<li><a href="#">Bildgalleri</a></li>
 				</ul>
 			</li>
 			<li>
@@ -64,7 +69,59 @@
 				<a class="nvmlink" target="_blank" href="https://www.nevermindmedia.se/"><img src="images/favicon.ico"></a>
 			</li>
 		</ul>
+		<hr>
 	</nav>
+</div>
+<section class="tipssection">
+	<div class="tipshead">
+		<h2>Manual</h2>
+	</div>
+		<div class="tipsnav">
+			<ul>
+				<li>Solutions</li>
+				<li>Exercise types</li>
+				<li>Feedback</li>
+				<li>Tabeller & CSS</li>
+				<li>Chapters hierarki</li>
+				<li>Samtliga begrepp</li>
+			</ul>
+		</div>
 
+		<div class="tipsbody">
+
+			<!-- Delen för chapter hierarki -->
+			<div class="chaptersimgleft">
+				<img src="images/course_overview.png" alt="">
+			</div>
+			<div class="chapterstext">
+				I bilden till vänster illustreras hierarkin från ett chapter(kapitel) ner till package(paket av uppgifter). <br>
+				Hierarkin är som sådan:
+				<ol>
+					<li>Chapter (kapitel)</li>
+					<li>Sub chapter (delkapitel)</li>
+					<li>Theory (Teori)</li>
+					<li>Package (Paket av uppgifter)</li>
+					<li>Exercise (uppgifter)</li>
+				</ol>
+				Till höger visas en illustration om hur det i praktiken ser ut när man jobbar med Libers material. <br>
+				4. Algebra och mönster (173)* är kapitel. <br>
+				4.0 Algebra och mönster (900)* är delkapitel. <br>
+				Algebra och mönster (5119)* är teori. <br>
+				Ett (5126)* är paket med en mängd uppgifter i sig. <br>
+				584a (23053)* -> 588 (23064) är uppgifter.<br>
+				Läs mer om <a href="">paket</a> och <a href="">teori</a> här. <br>
+				* - Talen inom parenteserna kallas för id nummer och är respektive dels 'personnummer'.
+			</div>
+			<div class="chaptersimgright">
+				<img src="images/chapters.png" alt="">
+			</div>
+
+		</div>
+
+	</section>
+	<div class="subinfo">
+		<h4>I manualen hittar du information och vägledning om de viktigaste bitarna i Sowiso</h4>
+		<p>bla bla tänka på, se över..</p>
+	</div>
 </body>
 </html>
