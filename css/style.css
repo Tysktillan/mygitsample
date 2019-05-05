@@ -140,7 +140,7 @@ ul li:hover > ul, ul li ul:hover {
 	position: absolute;
 	display: none;
 	color: var(--golden);
-	padding: 1rem 0 0 0;
+	padding: 1.5rem 0 0 0;
 	width: 60%;
 	margin-right: 40%;
 	margin-left: 18%;

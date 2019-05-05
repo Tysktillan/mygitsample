@@ -38,7 +38,6 @@ hr {
 	margin: 3rem 0 0 20%;
 	min-height: 500px;
 	width: 150px;
-
 }
 
 .tipsnav li {
@@ -48,8 +47,12 @@ hr {
 	background-color: lightgray;
 }
 
+.tipsnav a {
+	cursor: pointer;
+}
+
 .tipsbody {
-	display: grid;
+	display: none;
 	grid-area: tipsbody;
 	grid-template-columns: auto 2fr 1fr; 
 }
@@ -146,6 +149,7 @@ hr {
 	grid-row: 7 / 10;
 }
 
+/* Del för dolda sektioner i subsidorna */
 
 
 
