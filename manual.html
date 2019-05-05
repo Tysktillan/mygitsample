@@ -76,18 +76,36 @@
 	<div class="tipshead">
 		<h2>Manual</h2>
 	</div>
-		<div class="tipsnav">
+		<nav class="tipsnav">
 			<ul>
-				<li>Solutions</li>
-				<li>Exercise types</li>
-				<li>Feedback</li>
-				<li>Tabeller & CSS</li>
-				<li>Chapters hierarki</li>
-				<li>Samtliga begrepp</li>
-			</ul>
-		</div>
+				<li>
+				<a onclick="myJsFunc('solutions')">Solutions</a>
+				</li>
 
-		<div class="tipsbody">
+				<li>
+					<a onclick="myJsFunc('exercise')">Exercise types</a>
+				</li>
+				
+				<li>
+					<a onclick="myJsFunc('feedback')">Feedback</a>
+				</li>
+				
+				<li>
+					<a onclick="myJsFunc('tabeller')">Tabeller & CSS</a>
+				</li>
+				
+				<li>
+					<a onclick="myJsFunc('hierarki')">Chapters hierarki</a>
+				</li>
+				
+				<li>
+					<a onclick="myJsFunc('samtligt')">Samtliga begrepp</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="tipsbody solutions">
+
 
 			<!-- Delen för chapter hierarki -->
 			<div class="chaptersimgleft">
@@ -118,10 +136,42 @@
 
 		</div>
 
+				<div class="tipsbody feedback">
+
+
+			<!-- Delen för chapter hierarki -->
+
+			<div class="chapterstext">
+				I bilden till vänster illustreras hierarkin från ett chapter(kapitel) ner till package(paket av uppgifter). <br>
+				Hierarkin är som sådan:
+				<ol>
+					<li>Chapter (kapitel)</li>
+					<li>Sub chapter (delkapitel)</li>
+					<li>Theory (Teori)</li>
+					<li>Package (Paket av uppgifter)</li>
+					<li>Exercise (uppgifter)</li>
+				</ol>
+				Till höger visas en illustration om hur det i praktiken ser ut när man jobbar med Libers material. <br>
+				4. Algebra och mönster (173)* är kapitel. <br>
+				4.0 Algebra och mönster (900)* är delkapitel. <br>
+				Algebra och mönster (5119)* är teori. <br>
+				Ett (5126)* är paket med en mängd uppgifter i sig. <br>
+				584a (23053)* -> 588 (23064) är uppgifter.<br>
+				Läs mer om <a href="">paket</a> och <a href="">teori</a> här. <br>
+				* - Talen inom parenteserna kallas för id nummer och är respektive dels 'personnummer'.
+			</div>
+			<div class="chaptersimgright">
+				<img src="images/chapters.png" alt="">
+			</div>
+
+		</div>
+
 	</section>
 	<div class="subinfo">
 		<h4>I manualen hittar du information och vägledning om de viktigaste bitarna i Sowiso</h4>
-		<p>bla bla tänka på, se över..</p>
+		<p>Tryck på en av länkarna till vänster för att få upp information om respektive område</p>
 	</div>
+
+	<script type="text/javascript" src="jscript/java.js"></script>
 </body>
 </html>
